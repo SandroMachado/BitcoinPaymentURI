@@ -3,6 +3,9 @@ apply plugin: 'maven'
 
 group = 'com.github.SandroMachado'
 
+sourceCompatibility = 1.7
+targetCompatibility = 1.7
+
 repositories {
     jcenter()
 }
