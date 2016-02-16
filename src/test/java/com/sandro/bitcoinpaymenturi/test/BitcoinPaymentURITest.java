@@ -1,4 +1,7 @@
+package com.sandro.bitcoinpaymenturi.test;
 import org.junit.Test;
+
+import com.sandro.bitcoinpaymenturi.BitcoinPaymentURI;
 
 import static org.junit.Assert.*;
 

@@ -1,4 +1,4 @@
-package model;
+package com.sandro.bitcoinpaymenturi.model;
 
 public class Parameter {
 	
