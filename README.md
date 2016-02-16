@@ -1,4 +1,4 @@
-# BitcoinPaymentURI 
+# BitcoinPaymentURI
 [![Release](https://jitpack.io/v/SandroMachado/BitcoinPaymentURI.svg)](https://jitpack.io/#SandroMachado/BitcoinPaymentURI)
 
 BitcoinPaymentURI is an open source library to handle the Bitcoin payment URI based on the [BIT 21](https://github.com/bitcoin/bips/blob/master/bip-0021.mediawiki). The purpose of this library is to provide a simplier way to the developers to integrate in their applications support for this URI Scheme  to easily make payments.
@@ -34,11 +34,11 @@ Parse the URI `bitcoin:175tWpb8K1S7NmH4Zx6rewF9WQrcZv245W?amount=50&label=Luke-J
 ```Java
 BitcoinPaymentURI bitcoinPaymentURI = BitcoinPaymentURI.parse("bitcoin:175tWpb8K1S7NmH4Zx6rewF9WQrcZv245W?amount=50&label=Luke-Jr&message=Donation%20for%20project%20xyz");
 
-bitcoinPaymentURI.getAddress(); \\175tWpb8K1S7NmH4Zx6rewF9WQrcZv245W
-bitcoinPaymentURI.getAmount(); \\50
+bitcoinPaymentURI.getAddress(); \\ 175tWpb8K1S7NmH4Zx6rewF9WQrcZv245W
+bitcoinPaymentURI.getAmount(); \\ 50
 bitcoinPaymentURI.getLabel(); \\ "Luke-Jr"
 bitcoinPaymentURI.getMessage(); \\ "Donation for project xyz"
-bitcoinPaymentURI.getParameters().size(); \\0
+bitcoinPaymentURI.getParameters().size(); \\ 0
 ```
 
 Generate the following URI `bitcoin:175tWpb8K1S7NmH4Zx6rewF9WQrcZv245W?message=Donation%20for%20project%20xyz&amount=50.0&req-fiz=biz&foo=bar&label=Luke-Jr`
