@@ -1,5 +1,16 @@
 # Changelog
 
+## [1.0.3](https://github.com/SandroMachado/BitcoinPaymentURI/tree/1.0.3) (2016-05-04)
+[Full Changelog](https://github.com/SandroMachado/BitcoinPaymentURI/compare/1.0.2...1.0.3)
+
+**Closed issues:**
+
+- Wrong parsing for URI with parameters that start with `.\*:` [\#5](https://github.com/SandroMachado/BitcoinPaymentURI/issues/5)
+
+**Merged pull requests:**
+
+- Fix parse for URI with parameters with `.\*:` [\#6](https://github.com/SandroMachado/BitcoinPaymentURI/pull/6) ([SandroMachado](https://github.com/SandroMachado))
+
 ## [1.0.2](https://github.com/SandroMachado/BitcoinPaymentURI/tree/1.0.2) (2016-02-16)
 [Full Changelog](https://github.com/SandroMachado/BitcoinPaymentURI/compare/1.0.1...1.0.2)
 
