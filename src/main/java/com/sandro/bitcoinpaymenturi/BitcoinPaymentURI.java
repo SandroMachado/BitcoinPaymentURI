@@ -181,7 +181,7 @@ public class BitcoinPaymentURI {
 		if (string.isEmpty()) {
 			return null;
 		}
-		
+
 		if (!string.toLowerCase().startsWith(SCHEME)) {
 			return null;
 		}

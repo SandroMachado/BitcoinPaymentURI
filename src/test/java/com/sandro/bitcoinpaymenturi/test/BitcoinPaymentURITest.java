@@ -52,17 +52,17 @@ public class BitcoinPaymentURITest {
     }
 
     @Test
-    public void testParseForAddressWithAmountAndNameAndMessageAndParametersMethod() {
+    public void testParseForAddressWithParametersMethod() {
 		BitcoinPaymentURI bitcoinPaymentURI = BitcoinPaymentURI.parse("bitcoin:175tWpb8K1S7NmH4Zx6rewF9WQrcZv245W?somethingyoudontunderstand=50&somethingelseyoudontget=999&r=https%3A%2F%2Ffoo.com%2Fi%2F7BpFbVsnh5PUisfh&req-app=appname");
 
     	assertEquals(bitcoinPaymentURI.getAddress(), "175tWpb8K1S7NmH4Zx6rewF9WQrcZv245W");
     	assertNull(bitcoinPaymentURI.getAmount());
     	assertNull(bitcoinPaymentURI.getLabel());
     	assertNull(bitcoinPaymentURI.getMessage());
-	assertEquals(bitcoinPaymentURI.getParameters().size(), 4);
+        assertEquals(bitcoinPaymentURI.getParameters().size(), 4);
     	assertEquals(bitcoinPaymentURI.getParameters().get("somethingyoudontunderstand").getValue(), "50");
     	assertEquals(bitcoinPaymentURI.getParameters().get("somethingelseyoudontget").getValue(), "999");
-	assertEquals(bitcoinPaymentURI.getParameters().get("r").getValue(), "https://foo.com/i/7BpFbVsnh5PUisfh");
+        assertEquals(bitcoinPaymentURI.getParameters().get("r").getValue(), "https://foo.com/i/7BpFbVsnh5PUisfh");
     	assertEquals(bitcoinPaymentURI.getParameters().get("app").getValue(), "appname");
     	assertTrue(bitcoinPaymentURI.getParameters().get("app").isRequired());
     }
@@ -85,13 +85,13 @@ public class BitcoinPaymentURITest {
     @Test
     public void testBuilder() {
     	BitcoinPaymentURI bitcoinPaymentURI = new BitcoinPaymentURI.Builder()
-    			.address("175tWpb8K1S7NmH4Zx6rewF9WQrcZv245W")
-    			.amount(50.0)
-    			.label("Luke-Jr")
-    			.message("Donation for project xyz")
-    			.parameter("foo", "bar")
-    			.requiredParameter("fiz", "biz")
-    			.build();
+    		.address("175tWpb8K1S7NmH4Zx6rewF9WQrcZv245W")
+    		.amount(50.0)
+    		.label("Luke-Jr")
+    		.message("Donation for project xyz")
+    		.parameter("foo", "bar")
+    		.requiredParameter("fiz", "biz")
+    		.build();
 
     	assertEquals(bitcoinPaymentURI.getAddress(), "175tWpb8K1S7NmH4Zx6rewF9WQrcZv245W");
     	assertEquals(bitcoinPaymentURI.getAmount(), Double.valueOf(50));
