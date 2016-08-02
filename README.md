@@ -2,7 +2,7 @@
 [![Release](https://jitpack.io/v/SandroMachado/BitcoinPaymentURI.svg)](https://jitpack.io/#SandroMachado/BitcoinPaymentURI)
 [![Build Status](https://travis-ci.org/SandroMachado/BitcoinPaymentURI.svg?branch=master)](https://travis-ci.org/SandroMachado/BitcoinPaymentURI)
 
-BitcoinPaymentURI is an open source library to handle the Bitcoin payment URI based on the [BIT 21](https://github.com/bitcoin/bips/blob/master/bip-0021.mediawiki). The purpose of this library is to provide a simplier way to the developers to integrate in their applications support for this URI Scheme  to easily make payments.
+BitcoinPaymentURI is an open source library to handle the Bitcoin payment URI based on the [BIT 21](https://github.com/bitcoin/bips/blob/master/bip-0021.mediawiki). The purpose of this library is to provide a simpler way to the developers to integrate in their applications support for this URI Scheme  to easily make payments.
 
 # Gradle Dependency
 
